@@ -6,14 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
+    <script defer src="./main.js"></script>
     <title>@mohammedlahboub</title>
 </head>
 
 <body class="bg-mainBg min-h-screen text-textW font-fredokaOne relative">
     <!-- meme -->
-    <div aria-hidden="true" class="absolute flex flex-col justify-between top0 left0 w-full h-full rounded-xl  z-10 ">
+    <div id="verifiedInfo" aria-hidden="true"
+        class="absolute hidden flex-col items-center justify-between top0 left0 w-full h-full rounded-xl  ">
         <div class=""></div>
-        <div class="h-60 bg-black rounded-t-xl"></div>
+        <div class="h-60 w-full max-w-[31rem]  bg-black rounded-t-xl"></div>
     </div>
 
     <main class="w-full max-w-[31rem]  p-3 grid grid-cols-2 m-auto gap-[0.4rem] pt-12 ">
@@ -25,8 +27,8 @@
                 title="mohammed lahboub profile image" class="aspect-square object-contain  max-w-[9rem] rounded-lg ">
             <h1 title="Mohammed Lahboub" class=" flex items-center gap-2 text-[1.8rem] sm:text-3xl md:text-4xl pt-2">
                 Mohammed Lahboub
-                <span id="verified" title="verified" class="cursor-pointer">
-                    <!-- ! Verified SVG -->
+                <span id="verifiedIcon" title="verified" class="cursor-pointer  ">
+                    <!-- ! Verified Icon -->
                     <svg width="20" height="20" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M17.25 9L15.42 6.9075L15.675 4.14L12.9675 3.525L11.55 1.125L9 2.22L6.45 1.125L5.0325 3.5175L2.325 4.125L2.58 6.9L0.75 9L2.58 11.0925L2.325 13.8675L5.0325 14.4825L6.45 16.875L9 15.7725L11.55 16.8675L12.9675 14.475L15.675 13.86L15.42 11.0925L17.25 9ZM7.5675 12.54L4.7175 9.6825L5.8275 8.5725L7.5675 10.32L11.955 5.9175L13.065 7.0275L7.5675 12.54Z"
