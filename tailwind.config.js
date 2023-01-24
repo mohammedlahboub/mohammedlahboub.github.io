@@ -7,7 +7,7 @@ module.exports = {
         'textW': '#F1FAEE',
         'mainBg': '#BFC0FF',
         'profileBg': '#14213D',
-        'textcol-1': '#8338EC',
+        'textcol-1': '#240046',
         'textcol-2': '#FB8500',
         'linkBg': '#001219',
         'linkBg-2': '#FCA311',
