@@ -21,7 +21,11 @@ module.exports = {
       backgroundImage: {
         'main-bg': "",
 
-      }
+      },
+      screens: {
+        'xss': '400px',
+        // => @media (min-width: 340px) { ... }
+      },
     },
   },
   plugins: [],

@@ -1,4 +1,3 @@
-
 //! Verified info box
 const verifiedIcon = document.getElementById('verifiedIcon');
 const verifiedInfo = document.getElementById('verifiedInfo');
