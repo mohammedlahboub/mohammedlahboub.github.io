@@ -1,8 +1,6 @@
 //! Verified info box
-const verifiedIcon = document.getElementById('verifiedIcon');
 const verifiedInfo = document.getElementById('verifiedInfo');
-
-verifiedIcon.addEventListener('click', () => {
+document.getElementById('verifiedIcon').addEventListener('click', () => {
     verifiedInfo.classList.replace('hidden', 'flex')
 })
 
