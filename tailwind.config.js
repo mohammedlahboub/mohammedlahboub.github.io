@@ -19,7 +19,7 @@ module.exports = {
         'fredokaOne': ['Fredoka One', 'sans-serif'],
       },
       backgroundImage: {
-        'main-bg': "",
+        'main-bg': "url(./assets/images/mainBg.webp)",
 
       },
       screens: {
