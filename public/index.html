@@ -47,14 +47,14 @@
 
         <!-- ! Profile section -->
         <section id="profile"
-            class="col-span-2 bg-linkBg rounded-lg p-4 pt-6 flex flex-col items-center border backdrop-blur-[9px] border-profileBg">
+            class="col-span-2 bg-linkBg rounded-lg p-4 pt-6 flex flex-col items-center border backdrop-blur-[9px] border-white shadow shadow-white">
             <img src="./assets/images/profilePhoto.webp" alt="Mohammed Lahboub profile picture"
                 title="Mohammed Lahboub profile picture"
-                class="aspect-square object-contain  max-w-[7rem] xss:max-w-[9rem] rounded-lg border-[#ffffff6e] border">
+                class="aspect-square object-contain  max-w-[7rem] xss:max-w-[9rem] rounded-lg ">
             <h1 title="Mohammed Lahboub"
                 class=" flex items-center gap-2 text-[1.3rem] sm:text-3xl xss:text-[1.6rem] md:text-4xl pt-2">
                 Mohammed Lahboub
-                <span id="verifiedIcon" title="verified" class="cursor-pointer  ">
+                <span id="verifiedIcon" title="verified" class="hidden cursor-pointer  ">
                     <!-- ! Verified Icon -->
                     <svg class="w-[16px] h-[16px] xss:w-[20px] xss:h-[20px]" viewBox="0 0 18 18" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -66,7 +66,7 @@
                 </span>
             </h1>
             <p id="about" title="about me"
-                class="text-center text-sm text-zinc-300 font-[200] md:text-xl xss:text-[1.1rem]">20, Science
+                class="hidden text-center text-sm text-zinc-300 font-[200] md:text-xl xss:text-[1.1rem]">20, Science
                 and
                 Technology
                 Student Coding
@@ -76,7 +76,7 @@
         <!-- ! Projects -->
         <a href="./projects" title="Projects" class="group/line1">
             <div
-                class="bg-linkBg text-textcol-2  rounded-lg text-2xl xss:text-4xl relative border-[#0000005a] border-solid border backdrop-blur-[9px]">
+                class="bg-linkBg shadow shadow-white text-textcol-2  rounded-lg text-2xl xss:text-4xl relative border-white border-solid border backdrop-blur-[9px]">
                 <p class=" pb-6 p-3">Projects</p>
                 <div aria-hidden="true"
                     class="absolute  w-[3rem] h-2 bottom-[0.3rem] left-[0.3rem] hidden rounded-xl  transition-[width] duration-500 border-[#ffffff5a] border-solid border">
@@ -87,7 +87,7 @@
         <!-- ! Blog -->
         <a href="./blog" title="Blog" class="group/line2">
             <div
-                class="bg-linkBg-2 text-textcol-1  rounded-lg text-2xl xss:text-4xl relative border-[#ffffff5a] border-solid border backdrop-blur-[9px]">
+                class="bg-linkBg-2 shadow shadow-white text-textcol-1  rounded-lg text-2xl xss:text-4xl relative border-white border-solid border backdrop-blur-[9px]">
                 <p class=" pb-6 p-3">Blog</p>
                 <div aria-hidden="true"
                     class="absolute w-2 h-[3rem] bottom-[0.3rem] right-[0.3rem] hidden bg-mainBg rounded-xl  transition-[width] duration-500">
@@ -97,10 +97,22 @@
         </a>
         <!-- ! Social Links -->
         <div class="col-span-2  ">
-            <ul class="grid grid-cols-4  gap-2">
+            <ul class="grid grid-cols-5  gap-2">
+                <!-- ? Youtube -->
+                <li title="youtube"><a title="Youtube link"
+                        class="aspect-square w-full shadow shadow-white border-white border  bg-[#000000ad] backdrop-blur-[9px] rounded-lg flex items-center justify-center p-4"
+                        target="_blank" rel="noopener" rel="nofollow" href="https://youtube.com/@mohammedlahboub">
+                        <svg class="w-full aspect-square" viewBox="0 0 24 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.183 16.5879H3.81705C1.71767 16.5879 0 14.8643 0 12.7578V3.83014C0 1.72356 1.71767 0 3.81705 0H20.183C22.2823 0 24 1.72356 24 3.83014V12.7578C24 14.8643 22.2823 16.5879 20.183 16.5879ZM9.26223 5.03006V12.1144L15.4666 8.51274L9.26223 5.03006Z"
+                                fill="#FFF" />
+                        </svg>
+
+                    </a></li>
                 <!-- ? Twitter -->
                 <li title="twitter"><a title="Twitter link"
-                        class="aspect-square w-full  bg-[#000000ad] backdrop-blur-[9px] rounded-lg flex items-center justify-center p-4"
+                        class="aspect-square w-full  shadow shadow-white border-white border bg-[#000000ad] backdrop-blur-[9px] rounded-lg flex items-center justify-center p-4"
                         target="_blank" rel="noopener" rel="nofollow" href="https://twitter.com/mhammedlahboub">
                         <svg class="w-full aspect-square" viewBox="0 0 24 20" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -113,7 +125,7 @@
                 <!-- ? Github -->
 
                 <li title="github"><a title="Github link"
-                        class="aspect-square w-full flex items-center justify-center bg-[#000000ad] backdrop-blur-[9px] rounded-lg p-4"
+                        class="aspect-square w-full shadow shadow-white border-white border flex items-center justify-center bg-[#000000ad] backdrop-blur-[9px] rounded-lg p-4"
                         target="_blank" rel="noopener" rel="nofollow" href="https://github.com/mohammedlahboub">
                         <svg class="w-full aspect-square" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
@@ -124,7 +136,7 @@
                 <!-- ? Linkedin -->
 
                 <li title="linkedin"><a title="Linkedin link"
-                        class="aspect-square w-full flex items-center justify-center bg-[#000000ad] backdrop-blur-[9px] rounded-lg p-4"
+                        class="aspect-square w-full shadow shadow-white border-white border flex items-center justify-center bg-[#000000ad] backdrop-blur-[9px] rounded-lg p-4"
                         target="_blank" rel="noopener" rel="nofollow"
                         href="https://www.linkedin.com/in/mohammedlahboub/">
                         <svg class="w-full aspect-square" viewBox="0 0 22 22" fill="none"
@@ -137,7 +149,7 @@
                 <!-- ? Instagram -->
 
                 <li title="instagram"><a title="Instagram link"
-                        class="aspect-square w-full flex items-center justify-center backdrop-blur-[9px] bg-[#000000ad] rounded-lg p-4"
+                        class="aspect-square w-full shadow shadow-white border-white border flex items-center justify-center backdrop-blur-[9px] bg-[#000000ad] rounded-lg p-4"
                         target="_blank" rel="noopener" rel="nofollow"
                         href="https://www.instagram.com/mohammedlahboub.ml/">
                         <svg class="w-full aspect-square" viewBox="0 0 24 24" fill="none"
