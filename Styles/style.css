@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --accent-bg-clr: #ffffff;
+    --primary-bg-clr: #000000;
+    --main-border-radius: 0.25rem;
+    --primary-txt-clr: #ffffff;
+    --secondary-txt-clr: #ffffffa3;
+}
+
+img,
+svg,
+video,
+canvas {
+    display: block;
+}
+
+@font-face {
+    font-family: SF-Pro-Rounded;
+    src: url(./FontsFree-Net-SF-Pro-Rounded-Regular.ttf);
+}
+
+body {
+    min-height: 100vh;
+    /* padding: 3rem 0 0; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.2rem; */
+    background-color: var(--accent-bg-clr);
+}
+
+.header {
+    width: 100%;
+    /* height: 2.5rem; */
+    background-color: var(--primary-bg-clr);
+    border-radius: var(--main-border-radius);
+}
+
+.main {
+    padding-top: 3rem;
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--primary-bg-clr);
+    color: var(--primary-txt-clr);
+    font-family: SF-Pro-Rounded;
+    /* border-radius: var(--main-border-radius); */
+}
+
+.profile {
+
+    width: 30rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    /* align-items: center; */
+    margin-bottom: 2.2rem;
+}
+
+.profileImg {
+    /* width: 6.5rem;ssssssssssssssss */
+    background-color: var(--accent-bg-clr);
+    width: 100%;
+    border-radius: 50%;
+}
+
+.profileTXT {
+    grid-column: span 3;
+}
+
+.userName {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    margin-top: 1rem;
+}
+
+.minAbout {
+    color: var(--secondary-txt-clr);
+    font-size: 15px;
+}
+
+.about {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.heading2 {
+    font-size: 17px;
+    font-weight: 500;
+}
+
+
+.about>p {
+    /* font-size: 15px; */
+    color: var(--secondary-txt-clr);
+}
+
+.links {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+
+.linkItems {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.linkItem {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.linkItem>div>p {
+    color: var(--accent-bg-clr);
+    opacity: 0.5;
+}
+
+.link {
+    color: var(--primary-txt-clr);
+    text-decoration: none;
+    grid-column: span 3;
+    display: flex;
+    gap: 0.25rem;
+}
