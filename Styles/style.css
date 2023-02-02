@@ -60,7 +60,9 @@ body {
     width: 30rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
     gap: 1.5rem;
+    row-gap: 0;
     /* align-items: center; */
     margin-bottom: 2.2rem;
 }
@@ -69,11 +71,13 @@ body {
     /* width: 6.5rem;ssssssssssssssss */
     background-color: var(--accent-bg-clr);
     width: 100%;
-    border-radius: 50%;
+    border-radius: 1rem;
+    /* border-radius: 50%; */
 }
 
 .profileTXT {
-    grid-column: span 3;
+    grid-row: 2;
+    grid-column: span 4;
 }
 
 .userName {
