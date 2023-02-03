@@ -28,11 +28,11 @@ canvas {
 
 body {
     min-height: 100vh;
-    /* padding: 3rem 0 0; */
     display: flex;
     flex-direction: column;
+    align-items: center;
     /* gap: 0.2rem; */
-    background-color: var(--accent-bg-clr);
+    background-color: var(--primary-bg-clr);
 }
 
 .header {
@@ -43,13 +43,13 @@ body {
 }
 
 .main {
-    padding-top: 3rem;
-    width: 100%;
+    padding: 0.5rem;
+    padding-top: 2rem;
+    max-width: 30rem;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--primary-bg-clr);
     color: var(--primary-txt-clr);
     font-family: SF-Pro-Rounded;
     /* border-radius: var(--main-border-radius); */
@@ -57,13 +57,13 @@ body {
 
 .profile {
 
-    width: 30rem;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto;
-    gap: 1.5rem;
+    /* grid-template-rows: auto auto; */
+    gap: .5rem;
     row-gap: 0;
-    /* align-items: center; */
+    align-items: center;
     margin-bottom: 2.2rem;
 }
 
@@ -76,15 +76,15 @@ body {
 }
 
 .profileTXT {
-    grid-row: 2;
-    grid-column: span 4;
+    /* grid-row: 2; */
+    grid-column: span 3;
 }
 
 .userName {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 0.3rem;
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
 }
 
 .minAbout {
@@ -93,11 +93,11 @@ body {
 }
 
 .about {
-    width: 30rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2.2rem;
 
 }
 
@@ -113,10 +113,10 @@ body {
 }
 
 .links {
-    width: 30rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 0.5rem;
 }
 
 
@@ -150,4 +150,10 @@ body {
 
 .arrow {
     opacity: 0.3;
+}
+
+@media only screen and (min-width: 500px) {
+    .profile {
+        gap: 1rem;
+    }
 }
