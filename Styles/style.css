@@ -11,7 +11,7 @@
     --primary-bg-clr: #000000;
     --main-border-radius: 0.25rem;
     --primary-txt-clr: #ffffff;
-    --secondary-txt-clr: #ffffffa3;
+    --secondary-txt-clr: #ffffffca;
 }
 
 img,
@@ -32,8 +32,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
     /* gap: 0.2rem; */
     background-color: var(--primary-bg-clr);
+    font-family: monospace;
+
+
 }
 
 .header {
@@ -44,17 +49,17 @@ body {
 }
 
 .main {
+    overflow: hidden;
     padding: 0.5rem;
     padding-top: 2rem;
     max-width: 30rem;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     display: flex;
     flex-direction: column;
     align-items: center;
     color: var(--primary-txt-clr);
     /* font-family: SF-Pro-Rounded; */
     /* border-radius: var(--main-border-radius); */
-    font-family: monospace;
 }
 
 .profile {
@@ -95,6 +100,7 @@ body {
 }
 
 .about {
+    font-size: 17px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -104,7 +110,9 @@ body {
 }
 
 .heading2 {
-    font-size: 17px;
+    text-decoration: rgba(255, 255, 255, 0.309) underline;
+
+    font-size: 22px;
     font-weight: 500;
 }
 
@@ -140,6 +148,7 @@ body {
 .linkItem>div>p {
     color: var(--accent-bg-clr);
     opacity: 0.5;
+    font-size: 1.1rem;
 }
 
 .link {
@@ -148,10 +157,15 @@ body {
     grid-column: span 3;
     display: flex;
     gap: 0.3rem;
+    font-size: 1.1rem;
 }
 
 .arrow {
     opacity: 0.3;
+}
+
+footer>p {
+    color: var(--secondary-txt-clr);
 }
 
 @media only screen and (min-width: 500px) {
