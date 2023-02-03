@@ -54,6 +54,7 @@ body {
     color: var(--primary-txt-clr);
     /* font-family: SF-Pro-Rounded; */
     /* border-radius: var(--main-border-radius); */
+    font-family: monospace;
 }
 
 .profile {
