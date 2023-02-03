@@ -21,10 +21,11 @@ canvas {
     display: block;
 }
 
+/* 
 @font-face {
     font-family: SF-Pro-Rounded;
     src: url(./FontsFree-Net-SF-Pro-Rounded-Regular.ttf);
-}
+} */
 
 body {
     min-height: 100vh;
@@ -51,7 +52,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: var(--primary-txt-clr);
-    font-family: SF-Pro-Rounded;
+    /* font-family: SF-Pro-Rounded; */
     /* border-radius: var(--main-border-radius); */
 }
 
