@@ -112,6 +112,7 @@ body {
 }
 
 .about {
+    display: none;
     font-size: 17px;
     width: 100%;
     display: flex;
@@ -131,10 +132,7 @@ body {
 }
 
 
-.about>p {
-    /* font-size: 15px; */
-    color: var(--secondary-txt-clr);
-}
+
 
 .links {
     width: 100%;
