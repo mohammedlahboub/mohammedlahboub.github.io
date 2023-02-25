@@ -163,7 +163,7 @@ body {
 }
 
 .link {
-    color: var(--primary-txt-clr);
+    color: #adb5bd;
     text-decoration: none;
     grid-column: span 3;
     display: flex;
