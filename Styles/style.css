@@ -99,6 +99,7 @@ body {
 }
 
 .userName {
+    color:#adb5bd;
     font-size: 1.5rem;
     font-weight: 500;
     margin-bottom: 0.3rem;
@@ -119,7 +120,9 @@ body {
     margin-bottom: 2.2rem;
 
 }
-
+.about > p {
+    color:#adb5bd;
+}
 .heading2 {
     /* text-decoration: rgba(255, 255, 255, 0.309) underline; */
 
